@@ -29,12 +29,11 @@ int gridsize = 25;
 
 void setup(){
     size (500, 500);
-    pacman = new PacMan(37.5, 37.5, 25);
+    pacman = new PacMan(37.5, 37.5, 25, radians(45), radians(315));
 }
 
 void draw(){
   background(0);
   pacman.display();
-  //pacman.keypressed();
-  pacman.move();
+  pacman.keypressed();
 }
